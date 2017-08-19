@@ -1,0 +1,46 @@
+body {
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+  background: black;
+  color: lime;
+  margin: 3em;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+div {
+  width: 800px;
+  margin: 50px auto;
+}
+
+input {
+  background: black;
+  color: white;
+  border: 5px solid lime;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 2em;
+  font-family: monospace;
+  font-weight: bold;
+  width: 200px;
+}
+
+span {
+  font-size: 3em;
+}
+
+button {
+  background: lime;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  font-size: 4em;
+  font-family: monospace;
+  font-weight: bold;
+  height: 150px;
+  width: 150px;
+  margin: 25px 5%;
+}

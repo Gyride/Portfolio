@@ -1,0 +1,234 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+	 display: block;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 16px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+  background-image: url(../img/green_burger.png);
+  background-size: cover;
+  background-position: center;
+  color: White;
+}
+
+header div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header div nav {
+  width: 70%;
+  margin: 0 auto;
+}
+
+header div nav span {
+  float: left;
+  margin: 0 10px;
+}
+
+header div nav img {
+  float: left;
+  margin: 0 10px;
+}
+
+header div nav span:nth-child(1n+4) {
+  float: right;
+  margin: 0 10px;
+}
+
+header div img {
+  display: block;
+  margin: 10px auto;
+}
+
+header div img + div {
+  width: 70%;
+  height: auto;
+  margin: 20px auto;
+}
+
+header div img + div input {
+  float: left;
+  width: 90%;
+  margin: 0 auto;
+}
+
+header div img + div input + input {
+  float: left;
+  width: 10%;
+  margin: 0 auto;
+}
+
+header div nav ul {
+  width: 530px;
+  margin: 0 auto;
+}
+
+header div nav ul li {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+header div nav ul img {
+  font-size: 8px;
+  height: 24px;
+  width: 24px;
+}
+
+header div nav + div {
+  margin: 20px auto;
+}
+
+header div nav + div img {
+  width: 20px;
+  height: 20px;
+}
+
+header div nav + div span {
+  text-align: center;
+}
+
+header div div + span {
+  text-align: center;
+}
+
+header div span + nav {
+  width: 670px;
+  margin: 10px auto;
+}
+
+header div span + nav span:nth-child(1n+4) {
+  float: left;
+}
+
+header + section h3 {
+  text-align: center;
+  margin: 20px;
+}
+
+header + section section {
+  border: 1px solid grey;
+  border-radius: 5px;
+  display: inline-block;
+  width: 260px;
+  height: auto;
+  margin: 30px 30px;
+}
+
+header + section section li img {
+  height: 20px;
+  width: auto;
+} 
+
+header + section > span {
+  text-align: center;
+  margin: 20px;
+}
+
+header + section + section h3 {
+  text-align: center;
+  margin: 30px;
+}
+
+header + section + section section {
+  border: 1px solid black;
+  border-radius: 3px;
+  float: left;
+  width: 200px;
+  height: 150px;
+  margin: 20px 25px;	
+}
+
+header + section + section section img {
+  display: block;
+  margin: 0 auto;
+}
+
+header + section + section section span {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  header div nav span {
+    float: none;
+  }
+
+  header div nav img {
+    float: none;
+  }
+
+  header div nav span:nth-child(1n+4) {
+    float: none;
+  }
+
+  header div nav ul {
+    width: 100px;
+  }
+
+  header div nav ul li {
+    display: block;
+  }
+
+  header div span + nav span:nth-child(1n+4) {
+    float: none;
+  }
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
