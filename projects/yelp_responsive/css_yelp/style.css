@@ -76,6 +76,10 @@ header div nav {
   margin: 0 auto;
 }
 
+header div nav img #hamburger {
+  display: none;
+}
+
 header div nav span {
   float: left;
   margin: 0 10px;
@@ -204,6 +208,15 @@ header + section + section section span {
 }
 
 @media only screen and (max-width: 768px) {
+  nav img {
+    display: block;
+
+  }
+
+  nav span {
+    display: none;
+  }
+
   header div nav span {
     float: none;
   }

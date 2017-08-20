@@ -95,8 +95,7 @@ header nav img + ul + ul li {
   margin: 20px 5px;
 }
 
-header nav img + ul + ul + img {
-  float: right;
+header nav img + ul img {
   display: none;
   height: 50px;
   width: auto;
@@ -154,14 +153,18 @@ section h4 {
   }
 
   header nav > img + ul {
+    float: right;
+  }
+
+  header nav > img + ul li {
    display: none;
   }
 
-  header nav > img + ul + ul + img {
+  header nav > img + ul img {
     display: block;
   }
 
-  header nav > img + ul + ul li {
+  header nav > img + ul + ul {
     display: none;
   }
 
