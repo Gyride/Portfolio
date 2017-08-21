@@ -55,6 +55,26 @@ body {
 	margin: auto;
 }
 
+.show {
+  display: block;
+  float: right;
+  clear: both;
+  position: absolute;
+}
+
+li.show {
+  top: 60px;
+  background: rgba(255, 255, 255, .3);
+}
+
+li + li.show {
+  top: 120px;
+}
+
+li + li + li.show {
+  top: 180px;
+}
+
 header {
   height: 67px;
   background-color: rgb(30, 30, 30);
@@ -202,6 +222,16 @@ section h4 {
   header nav {
     width: 90%;
     margin: 0px auto;
+  }
+
+  header nav > img + ul li {
+   display: none;
+  }
+
+  header #hamburger {
+    display: block;
+	height: 50px;
+	width: auto;
   }
 
   header nav > img + ul {

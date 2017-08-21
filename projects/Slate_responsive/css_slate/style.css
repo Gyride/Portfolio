@@ -55,6 +55,10 @@ body {
 	margin: auto;
 }
 
+.show {
+  display: block;
+}
+
 body > div {
   width: 1000px;
   margin-left: auto;
